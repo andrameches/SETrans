@@ -1,26 +1,29 @@
-a:hover,a:focus{
+a:hover, a:focus {
     text-decoration: none;
     outline: none;
 }
-#accordion .panel{
+
+#accordion .panel {
     border: none;
     border-radius: 5px;
     box-shadow: none;
     margin-bottom: 10px;
     background: transparent;
 }
-#accordion .panel-heading{
+
+#accordion .panel-heading {
     padding: 0;
     border: none;
     border-radius: 5px;
     background: transparent;
     position: relative;
 }
-#accordion .panel-title a{
+
+#accordion .panel-title a {
     display: block;
     padding: 20px 30px;
     margin: 0;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
     font-size: 17px;
     font-weight: bold;
     color: #fff;
@@ -30,9 +33,13 @@ a:hover,a:focus{
     border-radius: 5px;
     position: relative;
 }
-#accordion .panel-title a.collapsed{ border: none; }
+
+#accordion .panel-title a.collapsed {
+    border: none;
+}
+
 #accordion .panel-title a:before,
-#accordion .panel-title a.collapsed:before{
+#accordion .panel-title a.collapsed:before {
     content: "\f107";
     font-family: "Font Awesome 5 Free";
     width: 30px;
@@ -48,13 +55,15 @@ a:hover,a:focus{
     transform: rotate(180deg);
     transition: all .4s cubic-bezier(0.080, 1.090, 0.320, 1.275);
 }
-#accordion .panel-title a.collapsed:before{
-    color: rgba(255,255,255,0.5);
+
+#accordion .panel-title a.collapsed:before {
+    color: rgba(255, 255, 255, 0.5);
     transform: rotate(0deg);
 }
-#accordion .panel-body{
+
+#accordion .panel-body {
     padding: 15px 30px;
-    background: rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.1);
     font-size: 15px;
     color: #fff;
     line-height: 28px;

@@ -14,13 +14,13 @@ echo '
                     <div class="col-sm-6">
                        <div class="form-group">
                           <span class="form-label">Username</span>
-                          <input class="form-control" name="username" type="text" placeholder="Enter your username" value="'.$_SESSION['username'].'" readonly>
+                          <input class="form-control" name="username" type="text" placeholder="Enter your username" value="' . $_SESSION['username'] . '" readonly>
                        </div>
                     </div>
                      <div class="col-sm-6">
                         <div class="form-group">
                            <span class="form-label">Email</span>
-                           <input class="form-control" name="email" type="email" placeholder="Enter your email" value="'.$_SESSION['email'].'" readonly>
+                           <input class="form-control" name="email" type="email" placeholder="Enter your email" value="' . $_SESSION['email'] . '" readonly>
                         </div>
                      </div>
                   </div>
@@ -28,7 +28,7 @@ echo '
                     <div class="col-sm-6">
                       <div class="form-group">
                          <span class="form-label">Old name</span>
-                         <input class="form-control" name="oldname" type="text" placeholder="Enter your name" value="'.$_SESSION['fullname'].'" disabled>
+                         <input class="form-control" name="oldname" type="text" placeholder="Enter your name" value="' . $_SESSION['fullname'] . '" disabled>
                       </div>
                     </div>
                     <div class="col-sm-6">
@@ -42,7 +42,7 @@ echo '
                     <div class="col-sm-6">
                        <div class="form-group">
                           <span class="form-label">Old phone</span>
-                          <input class="form-control" name="oldphone" type="text" placeholder="Enter your phone" value="'.$_SESSION['phone'].'" disabled>
+                          <input class="form-control" name="oldphone" type="text" placeholder="Enter your phone" value="' . $_SESSION['phone'] . '" disabled>
                        </div>
                     </div>
                     <div class="col-sm-6">

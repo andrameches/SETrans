@@ -1,10 +1,9 @@
 <?php
 
 
-if(!isset($_POST['contact-submit']))
-{
-  header("Location: ../");
-  die();
+if (!isset($_POST['contact-submit'])) {
+    header("Location: .");
+    die();
 }
 
 require 'conectare.php';
@@ -19,4 +18,4 @@ $sql = "INSERT INTO contactus (name,email,phone,message,date) VALUES ('$name','$
 $result = mysqli_query($conn, $sql);
 
 echo "<script type='text/javascript'>alert(\"Message sent. We will contact you soon!\");
-window.location.href = \"../\";</script>";
+window.location.href = \"../SETrans/index.php\";</script>";

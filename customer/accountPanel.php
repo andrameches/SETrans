@@ -1,15 +1,15 @@
 <?php
- echo '
+echo '
  <h1 class="landmessage display-3">ACCOUNT PANEL</h1>
  <div id="accountpanel">
     <div class="row">
        <div class="col-md-4"></div>
        <div class="col-md-4">
-          <h3 class="landmessage">Username: '.$_SESSION['username'].'</h3>
-          <h3 class="landmessage">Full name: '.$_SESSION['fullname'].'</h3>
-          <h3 class="landmessage">Email: '.$_SESSION['email'].'</h3>
-          <h3 class="landmessage">Phone: '.$_SESSION['phone'].'</h3>
-          <h3 class="landmessage">Account Type: '.$_SESSION['account_type'].'</h3>
+          <h3 class="landmessage">Username: <span class="yellow-heading">' . $_SESSION['username'] . '</span></h3>
+          <h3 class="landmessage">Full name:  <span class="yellow-heading">' . $_SESSION['fullname'] . '</span></h3>
+          <h3 class="landmessage">Email:  <span class="yellow-heading">' . $_SESSION['email'] . '</span></h3>
+          <h3 class="landmessage">Phone:  <span class="yellow-heading">' . $_SESSION['phone'] . '</span></h3>
+          <h3 class="landmessage">Account Type:  <span class="yellow-heading">' . $_SESSION['account_type'] . '</span></h3>
           <br>
        </div>
        <div class="col-md-4"></div>
@@ -29,8 +29,8 @@
             <div id="collapseZero" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="BookNow">
                <div class="panel-body">
   ';
-  require 'accountUpdateForm.php';
-  echo '
+require 'accountUpdateForm.php';
+echo '
                </div>
             </div>
          </div>
@@ -67,8 +67,8 @@ echo '
              </div>
           </div>
 ';
-if((isset($_SESSION['account_type']))&&($_SESSION['account_type']=='ADMIN'))
-require 'admin/adminpanel.php';
+if ((isset($_SESSION['account_type'])) && ($_SESSION['account_type'] == 'ADMIN'))
+    require 'admin/adminpanel.php';
 echo '
        </div>
     </div>

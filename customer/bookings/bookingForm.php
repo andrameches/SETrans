@@ -11,31 +11,31 @@ echo '
                <form action="customer/booking.inc.php" method="post">
                   <div class="form-group">
                      <span class="form-label">Name</span>
-                     <input class="form-control" name="booking-name" type="text" placeholder="Enter your name" value="'.$_SESSION['fullname'].'"';
-                     if(isset($_SESSION['account_type']))
-                      if($_SESSION['account_type']=='USER')
-                        echo ' disabled';
-                     echo '>
+                     <input class="form-control" name="booking-name" type="text" placeholder="Enter your name" value="' . $_SESSION['fullname'] . '"';
+if (isset($_SESSION['account_type']))
+    if ($_SESSION['account_type'] == 'USER')
+        echo ' disabled';
+echo '>
                   </div>
                   <div class="row">
                      <div class="col-sm-6">
                         <div class="form-group">
                            <span class="form-label">Email</span>
-                           <input class="form-control" name="booking-email" type="email" placeholder="Enter your email" value="'.$_SESSION['email'].'"';
-                           if(isset($_SESSION['account_type']))
-                            if($_SESSION['account_type']=='USER')
-                              echo ' disabled';
-                           echo '>
+                           <input class="form-control" name="booking-email" type="email" placeholder="Enter your email" value="' . $_SESSION['email'] . '"';
+if (isset($_SESSION['account_type']))
+    if ($_SESSION['account_type'] == 'USER')
+        echo ' disabled';
+echo '>
                         </div>
                      </div>
                      <div class="col-sm-6">
                         <div class="form-group">
                            <span class="form-label">Phone</span>
-                           <input class="form-control" name="booking-phone" type="tel" placeholder="Enter your phone number" value="'.$_SESSION['phone'].'"';
-                           if(isset($_SESSION['account_type']))
-                            if($_SESSION['account_type']=='USER')
-                              echo ' disabled';
-                           echo '>
+                           <input class="form-control" name="booking-phone" type="tel" placeholder="Enter your phone number" value="' . $_SESSION['phone'] . '"';
+if (isset($_SESSION['account_type']))
+    if ($_SESSION['account_type'] == 'USER')
+        echo ' disabled';
+echo '>
                         </div>
                      </div>
                   </div>
@@ -51,7 +51,7 @@ echo '
                      <div class="col-sm-5">
                         <div class="form-group">
                            <span class="form-label">Pickup Date</span>
-                           <input class="form-control" name="booking-date" type="date" min="'.date('Y-m-d').'" required>
+                           <input class="form-control" name="booking-date" type="date" min="' . date('Y-m-d') . '" required>
                         </div>
                      </div>
                      <div class="col-sm-7">
